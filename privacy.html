@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duebell Driver Privacy Policy / プライバシーポリシー</title>
+<style>
+  /* Duebell Fleet の privacy.html と同じ構成。色はアプリの画面（生成り・墨・朱）に揃える */
+  :root { --ink:#2B2A26; --accent:#B8432F; --line:#CFC8B8; --soft:#6B665C; --paper:#F4F1EA; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI","Meiryo","Yu Gothic UI",system-ui,sans-serif;
+    color: var(--ink); line-height: 1.75; margin: 0;
+    background: var(--paper);
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 22px 64px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 14px; margin-bottom: 8px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h1 .brand { font-family: "Bahnschrift","Segoe UI",sans-serif; letter-spacing: 1px; }
+  .meta { color: var(--soft); font-size: .9rem; }
+  .summary { background:#FBF9F4; border:1px solid var(--line); border-left:5px solid var(--accent);
+             border-radius:6px; padding:12px 16px; margin:16px 0; font-weight:600; }
+  h2 { color: var(--accent); font-size: 1.25rem; margin: 40px 0 6px; }
+  h3 { font-size: 1.02rem; margin: 22px 0 4px; border-left: 4px solid var(--accent); padding-left: 8px; }
+  p, li { font-size: .98rem; }
+  code { background:#ECE7DC; padding:1px 6px; border-radius:4px; font-family:Consolas,monospace; font-size:.9em; word-break: break-all; }
+  hr { border:none; border-top:1px solid var(--line); margin:36px 0; }
+  .lang-divider { text-align:center; color:var(--soft); font-size:.85rem; letter-spacing:2px; margin:8px 0; }
+  footer { margin-top: 40px; color: var(--soft); font-size:.85rem; text-align:center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1><span class="brand">Duebell Driver</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
+    <div class="meta">最終更新日 / Last updated: 2026-09-26 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+  </header>
+
+  <!-- ================= 日本語 ================= -->
+  <h2>日本語</h2>
+
+  <h3>はじめに</h3>
+  <p>Duebell Driver（以下「本アプリ」）は、トラックドライバーの勤務記録から改善基準告示にもとづく拘束時間・休息期間・運転時間を判定し、運転免許・健康診断・適性診断の期限を管理する Windows 向けデスクトップアプリです。本ポリシーは、本アプリが利用者の情報をどのように取り扱うかを説明します。</p>
+  <div class="summary">本アプリは個人情報を一切収集・送信・共有しません。入力したデータはすべて利用者のデバイス（または利用者が指定したフォルダ）内にのみ保存されます。</div>
+
+  <h3>1. 収集する情報</h3>
+  <ul>
+    <li>本アプリは利用者の個人情報を収集しません。</li>
+    <li>利用者が入力した次のデータは、利用者のデバイス内のデータベースファイル（既定は <code>%LOCALAPPDATA%\DuebellDriver\duebell_driver.db</code>。利用者が社内の共有フォルダなど別の場所を指定した場合はその場所）に保存されます。
+      <ul>
+        <li>ドライバーの情報（氏名、社員番号、所属、在籍の状態、備考）</li>
+        <li>勤務記録（始業・終業・運転・休憩などの時刻、休日労働・長距離運行・特例の区分と理由）</li>
+        <li>運転免許・健康診断・適性診断などの期限と更新の履歴（診断の結果そのものは扱いません）</li>
+        <li>基準値・起算日などの設定、CSV 取り込みの列の対応付け</li>
+        <li>自動・手動のバックアップ（データベースと同じ場所の <code>backup</code> フォルダ）</li>
+      </ul>
+    </li>
+    <li>次回起動時に同じ状態で開く目的で、次の設定が <code>%LOCALAPPDATA%\DuebellDriver\duebell_driver.ini</code> に保存されます：同意した免責事項の版、データベースの場所、一覧の列幅、ウィンドウの位置と大きさ。</li>
+    <li>共有フォルダで使う場合、同時編集を防ぐためのロックファイルに、編集中の PC 名・Windows のユーザー名・時刻が書かれます。これは同じフォルダを使う利用者の画面に「編集中の人」として表示するためだけに使われます。</li>
+    <li>これらのファイルが外部へ送信されることはなく、開発者がアクセスすることもできません。</li>
+    <li>ドライバーの氏名や勤務記録は、利用者（事業者）が従業員について入力する個人情報です。その管理（アクセスできる人の範囲、保存場所、保存期間など）は利用者の責任で行ってください。</li>
+  </ul>
+
+  <h3>2. 利用目的</h3>
+  <p>上記のデータは、本アプリの機能（拘束時間等の判定、期限の管理、表示・設定の復元、共有フォルダでの排他制御）を提供する目的にのみ使用します。それ以外の目的では使用しません。</p>
+
+  <h3>3. ネットワーク・オンラインサービス</h3>
+  <p>本アプリはインターネットに接続せずに動作します。テレメトリ・利用解析（アナリティクス）・広告・トラッキング・ユーザーアカウントの仕組みを一切含みません。</p>
+  <p>Microsoft Store 版では、試用期間とライセンスの確認、および購入を Windows と Microsoft Store の仕組みを通じて行います。これに伴う情報の取り扱いは <a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従います。本アプリが開発者に情報を送ることはありません。</p>
+
+  <h3>4. 第三者への提供</h3>
+  <p>本アプリはデータを収集しないため、いかなるデータも第三者へ販売・提供・開示しません。</p>
+
+  <h3>5. 書き出し機能について</h3>
+  <p>CSV・印刷用 HTML への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが外部へ送信することはありません。</p>
+
+  <h3>6. データの保存期間と削除</h3>
+  <p>データは、利用者が削除するまで保存されます。本アプリをアンインストールしても、業務データを失わないようデータベースとバックアップは残ります。完全に消去するには、<code>%LOCALAPPDATA%\DuebellDriver</code>（および利用者が指定した保存場所）を削除してください。</p>
+
+  <h3>7. セキュリティ</h3>
+  <p>データは利用者のデバイスまたは利用者が指定したフォルダにのみ保存されるため、その安全性は利用者のデバイス・ネットワークのセキュリティ対策に依存します。</p>
+
+  <h3>8. 子どものプライバシー</h3>
+  <p>本アプリは、子どもを含むいかなる利用者からも情報を収集しません。</p>
+
+  <h3>9. 本ポリシーの変更</h3>
+  <p>本ポリシーは必要に応じて改定することがあります。最新版はこのページに掲載します。</p>
+
+  <h3>10. お問い合わせ</h3>
+  <p>本ポリシーや本アプリに関するお問い合わせ先：<a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <hr>
+  <div class="lang-divider">— ENGLISH —</div>
+
+  <!-- ================= English ================= -->
+  <h2>English</h2>
+
+  <h3>Introduction</h3>
+  <p>Duebell Driver ("the App") is a Windows desktop application that checks the working hours of truck drivers against the Japanese rules (the Improvement Standards Notice) from their shift records, and keeps the deadlines of driving licences, health checks and aptitude tests. This policy explains how the App handles your information.</p>
+  <div class="summary">The App does not collect, transmit, or share any personal data. Everything you enter is stored only on your device (or in a folder you choose).</div>
+
+  <h3>1. Information we collect</h3>
+  <ul>
+    <li>The App does not collect any personal information.</li>
+    <li>The data you enter is stored in a database file on your device (by default <code>%LOCALAPPDATA%\DuebellDriver\duebell_driver.db</code>, or another location you choose, such as a shared folder on your company network):
+      <ul>
+        <li>Driver information (name, employee number, department, employment status, notes)</li>
+        <li>Shift records (start, end, driving and break times; holiday work, long-distance and exemption marks with their reasons)</li>
+        <li>Due dates and renewal history of driving licences, health checks and aptitude tests (not their results)</li>
+        <li>Settings such as the limits and period origins, and the column mapping for CSV import</li>
+        <li>Automatic and manual backups (a <code>backup</code> folder next to the database)</li>
+      </ul>
+    </li>
+    <li>To open the App the way you left it, the following settings are stored in <code>%LOCALAPPDATA%\DuebellDriver\duebell_driver.ini</code>: the version of the disclaimer you agreed to, the database location, column widths and the window position and size.</li>
+    <li>When the database is in a shared folder, a lock file records the editing PC's name, the Windows user name and the time, to prevent simultaneous editing. It is used only to show other users of the same folder who is editing.</li>
+    <li>These files never leave your device, and the developer cannot access them.</li>
+    <li>Driver names and shift records are personal data of your employees that you enter as the employer. You are responsible for managing them (who can access them, where and how long they are kept).</li>
+  </ul>
+
+  <h3>2. How we use information</h3>
+  <p>The data is used only to provide the App's functionality (checking working hours, managing deadlines, restoring the display and settings, and locking a shared database). It is not used for any other purpose.</p>
+
+  <h3>3. Network and online services</h3>
+  <p>The App works without an internet connection. It contains no telemetry, analytics, advertising, tracking or user accounts.</p>
+  <p>In the Microsoft Store version, the trial period, the licence check and purchases are handled by Windows and the Microsoft Store; the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> applies to that. The App itself never sends information to the developer.</p>
+
+  <h3>4. Sharing with third parties</h3>
+  <p>Because the App does not collect data, it does not sell, share or disclose any data to third parties.</p>
+
+  <h3>5. Export features</h3>
+  <p>Export to CSV and printable HTML runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
+
+  <h3>6. Retention and deletion</h3>
+  <p>Data is kept until you delete it. Uninstalling the App leaves the database and backups in place so that business data is not lost. To remove everything, delete <code>%LOCALAPPDATA%\DuebellDriver</code> (and any other location you chose for the database).</p>
+
+  <h3>7. Security</h3>
+  <p>Data is stored only on your device or in a folder you choose, so its security depends on the security measures of your device and network.</p>
+
+  <h3>8. Children's privacy</h3>
+  <p>The App does not collect information from anyone, including children.</p>
+
+  <h3>9. Changes to this policy</h3>
+  <p>This policy may be updated as needed. The latest version is always published on this page.</p>
+
+  <h3>10. Contact</h3>
+  <p>Questions about this policy or the App: <a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <footer>&copy; 2026 G-Works &nbsp;·&nbsp; Duebell Driver</footer>
+</div>
+</body>
+</html>
