@@ -35,7 +35,7 @@
 
   <header>
     <h1><span class="brand">Duebell Driver</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
-    <div class="meta">最終更新日 / Last updated: 2026-11-17 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+    <div class="meta">最終更新日 / Last updated: 2026-11-19 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
   </header>
 
   <!-- ================= 日本語 ================= -->
@@ -51,7 +51,9 @@
     <li>利用者が入力した次のデータは、利用者のデバイス内のデータベースファイル（既定は「ドキュメント」フォルダの <code>DuebellDriver\duebell_driver.db</code>。利用者が社内の共有フォルダなど別の場所を指定した場合はその場所）に保存されます。
       <ul>
         <li>ドライバーの情報（氏名、社員番号、所属、在籍の状態、備考）</li>
-        <li>勤務記録（始業・終業・運転・休憩などの時刻、休日労働・長距離運行・特例の区分と理由）と、予定として入れた勤務</li>
+        <li>勤務記録（始業・終業・運転・休憩・荷待ち・荷役などの時刻とその場所・荷主の名前、休日労働・長距離運行・特例の区分と理由）と、予定として入れた勤務</li>
+        <li>乗務記録（車両、乗務開始・終了の地点と主な経過地点、メーターの値と乗務距離、積荷、事故・著しい遅延などの内容）</li>
+        <li>違反ごとに記入した理由と対策</li>
         <li>点呼・酒気帯び確認の記録（日時、方法、確認者、車両、検知器の使用と測定値、酒気帯びの有無、健康状態、日常点検、指示事項）</li>
         <li>運転者台帳の事項（生年月日、住所、電話番号、雇入れ・選任・退職の日、運転免許の番号・種類・条件、健康状態、事故歴・違反歴）</li>
         <li>指導・監督の記録（実施日、種別、内容と指導事項、時間、指導者）</li>
@@ -60,7 +62,7 @@
         <li>自動・手動のバックアップ（データベースと同じ場所の <code>backup</code> フォルダ）</li>
       </ul>
     </li>
-    <li>次回起動時に同じ状態で開く目的で、次の設定が本アプリの設定ファイル（<code>duebell_driver.ini</code>。Microsoft Store 版ではアプリ専用の領域）に保存されます：同意した免責事項の版、データベースの場所、一覧の列幅、ウィンドウの位置と大きさ。</li>
+    <li>次回起動時に同じ状態で開く目的で、次の設定が本アプリの設定ファイル（<code>duebell_driver.ini</code>。Microsoft Store 版ではアプリ専用の領域）に保存されます：同意した免責事項の版、データベースの場所、一覧の列幅、ウィンドウの位置と大きさ、「明日走れる人」で最後に使った始業の時刻。</li>
     <li>共有フォルダで使う場合、同時編集を防ぐためのロックファイルに、編集中の PC 名・Windows のユーザー名・時刻が書かれます。これは同じフォルダを使う利用者の画面に「編集中の人」として表示するためだけに使われます。</li>
     <li>データベースと同じ場所の記録ファイル（<code>duebell_driver.clients</code>）に、データベースを開いた PC 名・Windows のユーザー名・本アプリの版・日時が書かれます。これは共有フォルダで使う場合に、データベースの形式を新しくする前に、古い版を使っている PC があることをお知らせするためだけに使われます。</li>
     <li>これらのファイルが外部へ送信されることはなく、開発者がアクセスすることもできません。</li>
@@ -112,7 +114,9 @@
     <li>The data you enter is stored in a database file on your device (by default <code>DuebellDriver\duebell_driver.db</code> in your Documents folder, or another location you choose, such as a shared folder on your company network):
       <ul>
         <li>Driver information (name, employee number, department, employment status, notes)</li>
-        <li>Shift records (start, end, driving and break times; holiday work, long-distance and exemption marks with their reasons), and shifts entered as plans</li>
+        <li>Shift records (start, end, driving, break, waiting and handling times with their places and the names of the shippers; holiday work, long-distance and exemption marks with their reasons), and shifts entered as plans</li>
+        <li>Trip records (vehicle, start, end and main points of the trip, odometer readings and distance, cargo, accidents or serious delays)</li>
+        <li>The reason and the measure entered for each violation</li>
         <li>Roll call and alcohol check records (time, method, who checked, vehicle, use of the detector and its reading, whether alcohol was found, health, the daily inspection, instructions)</li>
         <li>Driver ledger entries (date of birth, address, phone number, dates of hiring, appointment and leaving, licence number, classes and conditions, health, accident and violation history)</li>
         <li>Guidance records (date, kind, content and topics, duration, instructor)</li>
@@ -121,7 +125,7 @@
         <li>Automatic and manual backups (a <code>backup</code> folder next to the database)</li>
       </ul>
     </li>
-    <li>To open the App the way you left it, the following settings are stored in the App's settings file (<code>duebell_driver.ini</code>; in the Microsoft Store version, in the App's own storage): the version of the disclaimer you agreed to, the database location, column widths and the window position and size.</li>
+    <li>To open the App the way you left it, the following settings are stored in the App's settings file (<code>duebell_driver.ini</code>; in the Microsoft Store version, in the App's own storage): the version of the disclaimer you agreed to, the database location, column widths, the window position and size, and the start time last used in "Who can drive tomorrow".</li>
     <li>When the database is in a shared folder, a lock file records the editing PC's name, the Windows user name and the time, to prevent simultaneous editing. It is used only to show other users of the same folder who is editing.</li>
     <li>A record file next to the database (<code>duebell_driver.clients</code>) stores the name of each PC that opened the database, the Windows user name, the App version and the date. It is used only to warn, before the database format is updated, that a PC sharing the folder still runs an older version.</li>
     <li>These files never leave your device, and the developer cannot access them.</li>
